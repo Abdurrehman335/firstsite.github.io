@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Listing - Real Estate Website</title>
+    <link rel="stylesheet" href="listing.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#">
+                    <img src="best.png" alt="RealEstatePro Logo">
+                </a>
+            </div>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Listings</a></li>
+                    <li><a href="#">Agents</a></li>
+                    <li><a href="login.html">SignIn</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Add Listing Form Section -->
+    <section class="listing-section">
+        <div class="container">
+            <h2>Add a New Property Listing</h2>
+            <form class='listing-form' id="listing-form" enctype="multipart/form-data">
+                <input type="text" id='title' placeholder="Property Title" required>
+                <input type="text" id='description' placeholder="Price" required>
+                <input type="text" id="price" placeholder=" Location" required>
+                
+                <!-- Custom File Upload Button -->
+                <input type="file" id="file-upload" accept="image/*" hidden>
+                <label for="file-upload" class="btn upload-btn">Upload Property Image</label>
+                
+                <button type="submit" class="btn">Add Listing</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Keller Williams. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<script src="./scripts/listing.js"></script>
+</body>
+</html>
